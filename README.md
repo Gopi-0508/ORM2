@@ -39,8 +39,8 @@ from.models import Car,CarAdmin
 admin.site.register(Car,CarAdmin)
 ```
 # OUTPUT:
-```
-![alt text](image-3.png)
-```
+
+![alt text](image-4.png)
+
 # RESULT:
 The program for implementing simple webserver is executed successfully.
