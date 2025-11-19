@@ -40,7 +40,7 @@ admin.site.register(Car,CarAdmin)
 ```
 # OUTPUT:
 ```
-Screenshot 2025-11-19 173606.png
+![alt text](image-1.png)
 ```
 # RESULT:
 The program for implementing simple webserver is executed successfully.
