@@ -1,6 +1,6 @@
 # EX01 Developing a Simple Webserver
 
-# Date:
+# Date: 19.11.2025
 # AIM:
 To develop a simple webserver to serve html pages and display the configuration details of laptop.
 
@@ -21,8 +21,26 @@ Serving the HTML pages.
 Testing the webserver.
 
 # PROGRAM:
+```
+models.py
+from django.db import models
+from django.contrib import admin
+class Car(models.Model):
+    brand = models.CharField(max_length=10)
+    car_name = models.CharField(max_length=10)
+    enginenum = models.IntegerField()
+    release = models.DateField()
 
+class CarAdmin(admin.ModelAdmin):
+    list_display=('brand', 'car_name', 'enginenum', 'release')
+admin.py
+from django.contrib import admin
+from.models import Car,CarAdmin
+admin.site.register(Car,CarAdmin)
+```
 # OUTPUT:
-
+```
+Screenshot 2025-11-19 173606.png
+```
 # RESULT:
 The program for implementing simple webserver is executed successfully.
